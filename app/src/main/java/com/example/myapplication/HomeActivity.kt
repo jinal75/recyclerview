@@ -27,9 +27,6 @@ class HomeActivity : AppCompatActivity() {
         Toast.makeText(this, "name : $name", Toast.LENGTH_SHORT).show()
         Name.text=intent.getStringExtra("name")
         message.text=intent.getStringExtra("message")
-        Glide.with(this).load("image")
-            .placeholder(R.drawable.ic_launcher_foreground)
-            .error(R.drawable.ic_launcher_foreground)
-            .into(image);
+
            }
 }
